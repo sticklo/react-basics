@@ -1,23 +1,26 @@
-import logo from './logo.svg';
+import Greet from './components/Greet';
+import Message from './components/Message';
+import Counter from './components/Counter';
+import Welcome from './components/Welcome';
+import FunctionClick from './components/FunctionClick';
 import './App.css';
+import ClassClick from './components/ClassClick';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <FunctionClick />
+    <ClassClick />
+    {/* <Counter /> */}
+    {/* <Message /> */}
+     {/* <Greet name="Bob" heroName="Superman">
+       <p>this is children props</p>
+     </Greet>
+     <Greet  name="Jane" heroName="Superwoman">
+       <button>action btn</button>
+     </Greet>
+     <Greet  name="Joy" heroName="Superboy"/> */}
+     {/* <Welcome name="Luffy" heroName="JoyBoy"/> */}
     </div>
   );
 }
